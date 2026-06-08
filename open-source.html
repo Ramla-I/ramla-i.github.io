@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open Source — Ramla Ijaz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="nav">
+        <a class="brand" href="index.html">Ramla Ijaz</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="open-source.html" class="active">Open Source</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 style="border:none; margin-top:2.4rem;">Open Source</h2>
+    <p class="lead">
+      Projects and tools I build and contribute to. See more on my
+      <a href="https://github.com/ramla-i" target="_blank" rel="noopener">GitHub profile</a>.
+    </p>
+
+    <!--
+      ============================================================
+      Copy a .card block to add a project. Edit the title, link,
+      description, and tags. Delete the placeholders you don't want.
+      ============================================================
+    -->
+    <div class="cards">
+      <div class="card">
+        <h3><a href="https://github.com/theseus-os/Theseus" target="_blank" rel="noopener">Theseus OS</a></h3>
+        <p>A safe-language, single-address-space operating system written from scratch in Rust,
+           exploring new OS structure and state management for greater resilience and live evolution
+           (OSDI&nbsp;2020). <!-- TODO: add a line on your specific contribution --></p>
+        <div class="tags"><span>Rust</span><span>Operating Systems</span><span>Research</span></div>
+      </div>
+
+      <div class="card">
+        <h3><a href="https://github.com/Ramla-I/intel82599-hal" target="_blank" rel="noopener">intel82599-hal</a></h3>
+        <p>A hardware abstraction layer for the Intel 82599 (ixgbe) 10&nbsp;GbE network card,
+           written in Rust. <!-- TODO: add a line on the goal, e.g. verified/safe device access --></p>
+        <div class="tags"><span>Rust</span><span>Device Drivers</span><span>Systems</span></div>
+      </div>
+
+      <div class="card">
+        <h3><a href="https://github.com/Ramla-I/hal_agent" target="_blank" rel="noopener">hal_agent</a></h3>
+        <p>An AI-powered tool that extracts hardware register information from device datasheets
+           (e.g. STM32, NXP Kinetis MCUs) and maps it to driver code, using LLM agents to generate
+           and validate hardware abstraction layers.</p>
+        <div class="tags"><span>LLM Agents</span><span>HAL Generation</span><span>Embedded</span></div>
+      </div>
+
+      <!-- Uncomment to list upstream contributions:
+      <div class="card">
+        <h3><a href="#" target="_blank" rel="noopener">Contributions</a></h3>
+        <p>Notable contributions to upstream projects (e.g., the Linux kernel, seL4, KLEE).</p>
+        <div class="tags"><span>Upstream</span></div>
+      </div>
+      -->
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      &copy; 2026 Ramla Ijaz &middot; Hosted on GitHub Pages
+    </div>
+  </footer>
+</body>
+</html>

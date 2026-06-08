@@ -1,0 +1,3 @@
+# Keep the editable Word CV (contains home address) out of the public repo
+assets/CV_Ramla.docx
+.DS_Store

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Ramla Ijaz — CV</title>
+<style>
+  @page { size: Letter; margin: 0.7in 0.8in; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 10.5pt;
+    line-height: 1.4;
+    color: #1a1a1a;
+    margin: 0;
+  }
+  header { text-align: center; margin-bottom: 14px; }
+  header h1 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 22pt;
+    letter-spacing: 3px;
+    margin: 0 0 4px;
+    font-weight: 700;
+  }
+  header .contact {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9.5pt;
+    color: #444;
+  }
+  header .contact a { color: #444; text-decoration: none; }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 11pt;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 1.5px solid #333;
+    padding-bottom: 2px;
+    margin: 16px 0 8px;
+  }
+  .item { margin-bottom: 9px; }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+  .row .left { font-weight: bold; }
+  .row .right {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 9.5pt;
+    color: #555;
+    white-space: nowrap;
+  }
+  .sub {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    font-style: italic;
+    color: #333;
+  }
+  .sub .right { font-style: normal; font-size: 9.5pt; color: #555; white-space: nowrap; }
+  ul { margin: 4px 0 0; padding-left: 18px; }
+  li { margin-bottom: 3px; }
+  p { margin: 2px 0; }
+  .note { color: #555; font-size: 9.5pt; }
+  a { color: #1a1a1a; }
+  .pub { margin-bottom: 6px; padding-left: 18px; text-indent: -18px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>RAMLA IJAZ</h1>
+  <div class="contact">
+    <a href="mailto:ramla.ijaz@yale.edu">ramla.ijaz@yale.edu</a> &nbsp;&bull;&nbsp;
+    <a href="https://github.com/Ramla-I">github.com/Ramla-I</a> &nbsp;&bull;&nbsp;
+    <a href="https://www.linkedin.com/in/ramla-ijaz/">linkedin.com/in/ramla-ijaz</a>
+  </div>
+</header>
+
+<h2>Education</h2>
+<div class="item">
+  <div class="row"><span class="left">Yale University</span><span class="right">2021 &ndash; 2026 (expected)</span></div>
+  <div class="sub"><span>Ph.D., Computer Science</span><span class="right">GPA: 4.0 / 4.0</span></div>
+</div>
+<div class="item">
+  <div class="row"><span class="left">Rice University</span><span class="right">2017 &ndash; 2020</span></div>
+  <div class="sub"><span>M.S., Electrical and Computer Engineering</span><span class="right">GPA: 3.66 / 4.0</span></div>
+</div>
+<div class="item">
+  <div class="row"><span class="left">University of Engineering and Technology, Lahore, Pakistan</span><span class="right">2012 &ndash; 2016</span></div>
+  <div class="sub"><span>B.Sc., Electrical Engineering &mdash; ranked 2nd of 225 students</span><span class="right">GPA: 3.87 / 4.0</span></div>
+</div>
+
+<h2>Current Research</h2>
+<div class="item">
+  <div class="row"><span class="left">Yale Efficient Computing Lab</span><span class="right">New Haven, CT</span></div>
+  <div class="sub"><span>Graduate Researcher</span><span class="right">Jan 2021 &ndash; present</span></div>
+  <ul>
+    <li>Designing an AI agentic system that uses LLMs to transform Rust systems code, addressing the
+        limitations of automatic C-to-Rust converters by restructuring code to minimize unsafe constructs
+        and maximize compiler-enforced invariants. In the first phase, I use GPT-4o to generate and refine
+        Hardware Abstraction Layers (HALs) that ensure datasheet-compliant device communication, alongside
+        supporting tooling for working with LLMs.</li>
+    <li>Developed a design methodology that combines type checking (a lightweight formal method) with
+        formal verification to uphold system invariants. By leveraging Rust's affine types to prevent
+        aliasing and integrating verification tools such as Prusti and Verus, I show how these techniques
+        jointly enforce system guarantees with less overhead than full formal verification. I applied the
+        methodology to the memory subsystem and the 10&nbsp;GbE network driver in Theseus OS, achieving
+        correctness without performance loss.</li>
+  </ul>
+</div>
+
+<h2>Research Experience</h2>
+<div class="item">
+  <div class="row"><span class="left">Rice University</span><span class="right">Houston, TX</span></div>
+  <div class="sub"><span>M.S. Research</span><span class="right">Jan 2018 &ndash; Dec 2020</span></div>
+  <ul>
+    <li>Rethought operating system design so that critical OS invariants are enforced directly by the Rust
+        compiler. Applied this approach to key components of Theseus OS&mdash;inter-process communication
+        (IPC), the heap allocator, network drivers, and power management&mdash;demonstrating stronger
+        correctness guarantees without sacrificing performance.</li>
+  </ul>
+</div>
+<div class="item">
+  <div class="row"><span class="left">Microsoft Research, Cambridge (UK)</span><span class="right">Virtual</span></div>
+  <div class="sub"><span>Research Intern &mdash; host: Bozidar Radunovic</span><span class="right">Jun 2020 &ndash; Aug 2020</span></div>
+  <ul>
+    <li>Conducted a detailed performance analysis of each stage of the software-based RAN baseband
+        processing pipeline on CPUs and GPUs, exploring the offloading of LDPC decoding to accelerators
+        (GPUs, FPGAs, eASICs) to optimize processing efficiency.</li>
+    <li>Built a simulator that intelligently partitions baseband processing and inference workloads across
+        machines in an edge data center, finding configurations that optimize resource utilization while
+        meeting the deadlines of low-latency applications.</li>
+  </ul>
+</div>
+<div class="item">
+  <div class="row"><span class="left">Electrical Engineering Department, LUMS</span><span class="right">Lahore, Pakistan</span></div>
+  <div class="sub"><span>Research Assistant &mdash; Dr. Adeel Pasha &amp; Dr. Naveed ul Hassan</span><span class="right">Jan 2017 &ndash; Jun 2017</span></div>
+  <ul>
+    <li>Contributed to the National ICT R&amp;D project &ldquo;Indoor Location-Based Services (LBS) for
+        mobile devices.&rdquo;</li>
+  </ul>
+</div>
+<div class="item">
+  <div class="row"><span class="left">Electronics and Embedded Systems Lab, LUMS</span><span class="right">Lahore, Pakistan</span></div>
+  <div class="sub"><span>Research Assistant</span><span class="right">Jul 2016 &ndash; Dec 2016</span></div>
+  <ul>
+    <li>Researched lightweight encryption for the Internet of Things and proposed a hardware implementation
+        of the TAV-128 hash algorithm that improves security while maintaining low power and resource use.</li>
+  </ul>
+</div>
+<div class="item">
+  <div class="row"><span class="left">Network and Systems Group, LUMS</span><span class="right">Lahore, Pakistan</span></div>
+  <div class="sub"><span>Research Intern &mdash; host: Dr. Ihsan Ayub Qazi</span><span class="right">Jun 2015 &ndash; Sep 2015</span></div>
+  <ul>
+    <li>Developed algorithms for routing in wireless data-center environments.</li>
+  </ul>
+</div>
+
+<h2>Publications</h2>
+<div class="pub">Ramla Ijaz, Kevin Boos, and Lin Zhong. &ldquo;Leveraging Rust for Lightweight OS Correctness.&rdquo;
+  <em>1st Workshop on Kernel Isolation, Safety and Verification (KISV)</em>, 2023.</div>
+<div class="pub">Ramla Ijaz. &ldquo;Exploring Intralingual Design in Operating Systems.&rdquo; M.S. Thesis, Rice University, 2020.</div>
+<div class="pub">Kevin Boos, Namitha Liyanage, Ramla Ijaz, and Lin Zhong. &ldquo;Theseus: an Experiment in Operating
+  System Structure and State Management.&rdquo; <em>14th USENIX Symposium on Operating Systems Design and
+  Implementation (OSDI)</em>, 2020.</div>
+<div class="pub">Ramla Ijaz and Muhammad Adeel Pasha. &ldquo;Area-Efficient and High-Throughput Hardware
+  Implementations of the TAV-128 Hash Function for Resource-Constrained IoT Devices.&rdquo;
+  <em>IEEE IDAACS</em>, 2017.</div>
+
+<h2>Teaching</h2>
+<div class="item">
+  <div class="row"><span class="left">CPSC 429 &mdash; guest lecture: Correctness by Combining Types and Verification</span><span class="right">Nov 2024</span></div>
+</div>
+<div class="item">
+  <div class="row"><span class="left">CPSC 429 &mdash; presentation: Rust Verification Tools + Demo</span><span class="right">Nov 2023</span></div>
+</div>
+<div class="item">
+  <div class="row"><span class="left">CPSC 323 &mdash; Introduction to Systems Programming, Teaching Fellow</span><span class="right">Jan &ndash; May 2022</span></div>
+</div>
+<div class="item">
+  <div class="row"><span class="left">CPSC 433 &mdash; Computer Networks, Teaching Fellow</span><span class="right">Jan &ndash; May 2021</span></div>
+</div>
+
+<h2>Service &amp; Leadership</h2>
+<div class="item">
+  <div class="row"><span class="left">Yale Graduate Society of Women Engineers &mdash; Mentorship Chair</span><span class="right">Sep 2024 &ndash; May 2025</span></div>
+  <div class="note">Created mentorship families for SWE members and organized events.</div>
+</div>
+<div class="item">
+  <div class="row"><span class="left">CS Graduate Student Advisory Committee &mdash; Board Member</span><span class="right">Jun 2022 &ndash; May 2023</span></div>
+  <div class="note">Organized events for CS graduate students and worked with faculty to improve the graduate experience.</div>
+</div>
+<div class="item">
+  <div class="row"><span class="left">Yale Pathways for Science &mdash; Volunteer</span><span class="right">Summer 2021</span></div>
+  <div class="note">Created assignments for a cloud-based chat application to introduce high school students to the cloud.</div>
+</div>
+
+<h2>Awards &amp; Scholarships</h2>
+<ul>
+  <li>NSDI &rsquo;21 Diversity Grant recipient</li>
+  <li>MobiCom &rsquo;19 N2Women Student Travel Grant recipient</li>
+  <li>OSDI &rsquo;18 Student Travel Grant recipient</li>
+  <li>President&rsquo;s Prize Fellowship, Rice University (2017)</li>
+  <li>Texas Instruments Distinguished Fellowship (2017)</li>
+  <li>Graduated with honors, B.Sc. Electrical Engineering (2016)</li>
+</ul>
+
+<h2>Skills</h2>
+<p><strong>Programming languages:</strong> Rust, C, C++, Python, CUDA, Dafny, Java, Verilog</p>
+<p><strong>Tools &amp; frameworks:</strong> OpenAI API, Prusti, Verus, rustc, Linux, MATLAB</p>
+
+</body>
+</html>
